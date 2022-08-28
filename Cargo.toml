@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "src",
+    "parser",
+    "lexer"
+]
+default-members = ["src"]
+
