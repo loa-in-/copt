@@ -1,5 +1,10 @@
-pub fn analyse(){
+pub fn analyse() -> bool{
     println!("Analyzing...");
+    true
+}
+
+fn main(){
+    analyse();
 }
 
 #[cfg(test)]
@@ -7,8 +12,8 @@ mod tests {
     use super::*;
 
     #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+    fn test() {
+        let result = analyse();
+        assert_eq!(result, true);
     }
 }

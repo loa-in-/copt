@@ -1,8 +1,13 @@
 use lexer;
 
-pub fn parse() {
+pub fn parse() -> bool{
     lexer::analyse();
     println!("Parsing...");
+    true
+}
+
+fn main(){
+    parse();
 }
 
 #[cfg(test)]
@@ -10,8 +15,8 @@ mod tests {
     use super::*;
 
     #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+    fn test() {
+        let result = parse();
+        assert_eq!(result, true);
     }
 }

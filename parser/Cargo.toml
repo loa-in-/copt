@@ -8,5 +8,9 @@ edition = "2021"
 name = "parser"
 path = "lib.rs"
 
+[[bin]]
+name = "parser"
+path = "lib.rs"
+
 [dependencies]
 lexer = { path = "../lexer" }

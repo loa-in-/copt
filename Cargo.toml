@@ -4,4 +4,5 @@ members = [
     "parser",
     "lexer"
 ]
+default-members = ["src"]
 
